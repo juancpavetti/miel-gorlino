@@ -1,0 +1,301 @@
+*{
+ padding: 0;
+ margin: 0;
+ border:0;   
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    background-color:rgb(255,183,61) ;
+    text-align: center;
+    padding: 1rem;
+   
+}
+footer ul{
+    list-style: none;
+
+}
+/** nav
+nav{
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+nav li{
+    text-decoration: none;
+   padding: 1rem;
+}
+nav a:hover, nav a:focus{
+    color: rgb(255,183,61);
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: .5rem;
+}
+
+
+
+/**Main**/
+figure{
+    width: 100%;
+}
+figure img{
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+section{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+article{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0rem 1rem 1rem 1rem ;
+}
+.producto{
+    width: 30%;
+    display: inline-block;
+}
+
+label{
+    width: 100%;
+}
+    
+article p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+form{
+    margin: 0 auto;
+    text-align: left;
+}
+form{
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}
+.contacto{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+  
+fieldset{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border: .1rem solid black;
+    
+}
+fieldset input, textarea{
+    padding: .5rem;
+    border: .1rem solid black;
+    margin-top: .5rem;
+    background-color: rgb(198, 198, 198);
+}
+/**Main**/
+
+@media all and (min-width:1024px) {
+    article{
+        padding: 0 17rem 0rem 17rem ;
+    }
+
+}
+.producto img{
+    order: 1;
+}
+/*** grid ***/
+    .grid{
+        
+        display: grid;
+        /**grid-template-columns: 1fr 1fr;**/
+        grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
+        /**grid-template-rows: 7rem 19rem 5rem;**/
+        grid-template-rows: auto auto auto;
+        width: auto;
+        padding: 1rem;
+        margin: auto;
+        grid-template-areas: "descripcion descripcion"
+                             "foto1   foto2"
+                             "descripcion2 descripcion2"
+    }
+   
+    .grid > div{
+        border: .1rem solid black;
+    }
+    .grid1{
+        grid-area: descripcion;
+        padding: 1rem;
+        width: auto;
+    }
+    .grid1 p{
+        width: auto;
+    }
+    .grid2{
+        grid-area: foto1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid3{
+        grid-area: foto2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .imggrid{
+         width: 40%;
+         text-align: center;
+         
+        }
+        .imggrid img{
+         width: 100%;
+         
+        }
+        
+    
+    
+     .grid4{
+        grid-area: descripcion2;
+        padding: 1rem;
+    }
+   @media all and (min-width:992px){
+        nav a{
+            padding: .5rem;
+        }
+        .imggrid{
+            width: 50%;
+            text-align: center;
+            
+        }
+        .grid{
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+        nav{
+            background-color: black;
+            color: white;
+            padding: 1.5rem;
+            
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           
+        }
+        nav li{
+            text-decoration: none;
+           padding: 1rem;
+        }
+        nav a:hover, nav a:focus{
+            color: rgb(255,183,61);
+            
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding: .5rem;
+        }
+        #contenedor-menu img{
+            display: none;
+        }
+        
+    }
+    @media all and (max-width:991px){
+        #contenedor-menu{
+            background-color: black;
+        }
+        #contenedor-menu img{
+            height: 3rem;
+            background-color: white;
+        }
+        #contenedor-menu #cerrar{
+            display: none;
+        }
+       
+        #contenedor-menu #contenedor-enlaces{
+            overflow: hidden;
+            height: 0;
+            transition: height 1s ease;
+        }
+        #contenedor-menu:target #cerrar{
+            display: block;
+        }
+        #contenedor-menu:target #abrir{
+            display: none;
+        }
+       
+        #contenedor-menu:target #contenedor-enlaces{
+            height: 12rem;
+            transition: height 1s ease;
+        }
+       
+        #contenedor-menu nav li{
+            margin-bottom: 0.1rem;
+            height: 4rem;
+            text-align: center;
+            text-decoration: none;
+        }
+        #contenedor-menu nav li a{
+            padding: .5rem;
+            margin-top: 1em;
+            text-decoration: none;
+            color: white;
+        }
+        
+
+    
+    
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+
+
+  /**       .grid{
+            width:100% ;
+            grid-template-columns: 1fr 1fr;
+            
+            grid-template-rows: 7.5rem 35rem 5rem;
+        }
+        
+    }
+    
+    
+    
+    }
+    @media all and (max-width:480px){
+        .grid{
+            width:100% ;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 15rem 20rem 7rem;
+        }
+    
+    }
