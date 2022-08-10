@@ -8,11 +8,12 @@ body{
 }
 
 footer{
-    background-color:rgb(255,183,61) ;
     text-align: center;
     padding: 1rem;
+    background-image: linear-gradient(to top, rgb(255,183,61) 40%, white 70%)
    
 }
+
 footer ul{
     list-style: none;
 
@@ -44,7 +45,6 @@ nav a{
     color: white;
     padding: .5rem;
 }
-
 
 
 /**Main**/
@@ -179,6 +179,8 @@ fieldset input, textarea{
         grid-area: descripcion2;
         padding: 1rem;
     }
+    /**nav**/
+    
    @media all and (min-width:992px){
         nav a{
             padding: .5rem;
