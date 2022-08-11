@@ -63,9 +63,10 @@ section{
     margin: 0 auto;
 }
 article{
-    font-size: 1.3rem;
+    
     text-align: center;
-    padding: 0rem 1rem 1rem 1rem ;
+    
+    margin: 35px;
 }
 .producto{
     width: 30%;
@@ -111,14 +112,12 @@ fieldset input, textarea{
     margin-top: .5rem;
     background-color: rgb(198, 198, 198);
 }
+p, .contacto {
+    font-size: 16px;
+}
 /**Main**/
 
-@media all and (min-width:1024px) {
-    article{
-        padding: 0 17rem 0rem 17rem ;
-    }
 
-}
 .producto img{
     order: 1;
 }
@@ -166,6 +165,7 @@ fieldset input, textarea{
         .imggrid{
          width: 40%;
          text-align: center;
+         margin: auto;
          
         }
         .imggrid img{
@@ -223,7 +223,7 @@ fieldset input, textarea{
         #contenedor-menu img{
             display: none;
         }
-        
+     
     }
     @media all and (max-width:991px){
         #contenedor-menu{
