@@ -20,30 +20,18 @@ footer ul{
 }
 
 /**Main**/
-figure{
-    width: 100%;
-}
-figure img{
-    width: 100%;
-}
+
 h1{
     text-align: center;
 }
-section{
-    width: 75%;
-    text-align: center;
-    margin: 0 auto;
-}
+
 article{
     
     text-align: center;
     
     margin: 35px;
 }
-.producto{
-    width: 30%;
-    display: inline-block;
-}
+
 
 label{
     width: 100%;
@@ -52,10 +40,6 @@ label{
 article p {
     text-align: left;
     margin-bottom: 1rem;
-}
-form{
-    margin: 0 auto;
-    text-align: left;
 }
 form{
     margin: 0 auto;
@@ -83,6 +67,7 @@ fieldset input, textarea{
     border: .1rem solid black;
     margin-top: .5rem;
     background-color: rgb(198, 198, 198);
+    border-radius: .5rem;
 }
 p, .contacto {
     font-size: 16px;
@@ -135,7 +120,7 @@ p, .contacto {
         align-items: center;
     }
         .imggrid{
-         width: 40%;
+         width: 70%;
          text-align: center;
          margin: auto;
          
@@ -169,11 +154,28 @@ p, .contacto {
         #contenedor-menu img{
             display: none;
         }
+        .navbar-expand-lg{
+            height: 5rem;
+        }
      
+
     }
+
+
+
+
+
+
+
+@media all and(max-width:1440px){
+    .gfoto1 img{
+        width: 460px;
+    }
+}
     
     
 /** nav bootstrap**/
+
 .bg{
     background-color: black;
 }
@@ -184,20 +186,35 @@ p, .contacto {
     background-color: white !important;
     
 }
+.nav-item a:hover, .nav-item a:focus{
+    background-color:  rgb(255,183,61);
+    color: black;
+    border-radius: .2rem;
+}
 /** grilla fotos**/
 .grilla{
     margin: 2rem
 }
-.col-md-6{
+
+
+
+
+.card{
     margin: auto;
-    width: 30% !important;
+    width:50%;
+}
+/** galeria**/
+.gfoto{
     
 }
+.gfoto1{
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+}
 
-
-
-
-    
-    
-    
-
+.gfoto img{
+    width: 100%;
+}
+.container{
+    margin-top: 1rem;
+}
