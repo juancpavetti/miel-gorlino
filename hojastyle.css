@@ -7,7 +7,9 @@ body {
   font-family: 'Poppins', sans-serif; }
 
 .container {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  color: black;
+  font-size: 16px; }
   .container h1 {
     text-align: center; }
   .container article {
@@ -24,6 +26,7 @@ body {
   padding: .5rem;
   display: flex;
   flex-direction: column;
+  color: black;
   font-size: 16px; }
   .contacto form {
     margin: 0 auto;
